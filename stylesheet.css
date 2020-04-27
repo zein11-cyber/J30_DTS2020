@@ -10,23 +10,31 @@ body {
 li {
   list-style: none;
 }
+article{
+  background-color: white;
+}
 
- a {
+a{
    text-decoration: none;
- }
+   color: white;
+   font-weight: bold;
+   text-align: center;
+  }
 
 .container {
-  max-width: 1140px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
 }
 
 header{
   background: #192A56;
+  background-color: rgba(25, 42, 86, 0.88);
   height: 70px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
+  padding: 0 10px;
 }
 
 .header-left {
@@ -41,13 +49,15 @@ header{
   line-height: 70px;
   padding: 0 25px;
   color: white;
-  display: inline-block;
+  display: block;
+  float: left;
+  transition: all 0.5s;
 }
 
 .header-right {
   float: right;
   margin: 0 -25px;
-  transition: all 0.5s;
+  
 }
 
 .header-right a:hover {
@@ -59,7 +69,127 @@ header{
 }
 
 .top-wrapper {
-  height: 365px;
   padding: 120px 0 100px 0;
-  color: #ffffff;
+  color: black;
+  background-image: url('img/wallpaper1.jpg');
+  /*background-image: url('https://i.pinimg.com/564x/bf/18/b2/bf18b27410473525ae200a76b0e49e95.jpg');*/
+  background-size: cover;
+  
+  height: 500px;
+  background-position: center;
+}
+h1{
+  margin : 20px 0 20px 20px;
+  font-weight: bold;
+  color:black;
+  text-shadow: 2px 7px 9px rgb(253, 253, 253);
+  font-size: 2em;
+}
+.containerabout{
+  display: flex;
+  /*properti lainnya*/
+  width: 800px;
+
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.box{
+  flex-grow: 1;
+  /*properti lainnya*/
+  padding: 10px;
+  margin: 10px;
+  
+}
+.card{
+  background-color: mintcream;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.tombolteam{
+  width: 150px;
+  margin-left: 20px;
+  padding: 10px;
+  background: linear-gradient(rgb(147, 29, 243),rgb(57, 4, 117));
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tombol{
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(rgb(147, 29, 243),rgb(57, 4, 117));
+  cursor: pointer;
+  border-radius: 5px;
+}
+.tombol,.tombolteam:hover{
+  background: linear-gradient(darkred,crimson,rgb(255, 0, 76));
+}
+h2{
+  color: #4e4039;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 60px;
+}
+p{
+  font-size: x-large;
+  margin : 20px 0 20px 20px;
+
+}
+
+.containerhome{
+  padding: 120px 0 100px 0;
+  color: white;
+  background-image: url('img/wallpaper2.jpg');
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+
+.footeratas{
+  background-color: black;
+  height: 200px;
+  line-height: 1.2;
+}
+
+.footeratas-div{
+  position: relative;
+  width: 40%;
+  float: left;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: white;
+  max-width: 40%;
+  margin: 0;
+}
+.footeratas-div p{
+  font-size: medium;
+}
+.footerbawah{
+  background-color: rgba(25, 42, 86, 0.88);
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+.footerbawah h5{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 15px;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* Gantikan property display ke none */
+  display: none;
+}
+
+.clear {
+  clear: left;
 }
